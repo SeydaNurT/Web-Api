@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Registration Successful";
+}
+
+<h2>Kayıt Başarılı!</h2>
+
+<p>
+    Your registration was successful. Please select an option to continue:
+</p>
+
+<div>
+    <a href="@Url.Action("Login", "Account")" class="btn btn-blue">Login</a>
+    <a href="@Url.Action("ListTokens", "Dashboard")" class="btn btn-blue">Token</a>
+</div>
+<style>
+    .btn-blue {
+        background-color: #007bff; /* Mavi arka plan rengi */
+        color: white; /* Beyaz yazı rengi */
+        border: none; /* Kenarlık yok */
+        padding: 10px 20px; /* İç boşluk */
+        text-decoration: none; /* Alt çizgi yok */
+        border-radius: 5px; /* Köşe yuvarlatma */
+        display: inline-block; /* Satır içi blok */
+        margin-right: 10px; /* Butonlar arasında boşluk */
+    }
+
+        .btn-blue:hover {
+            background-color: #0056b3; /* Hover durumunda daha koyu mavi */
+        }
+</style>

@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Welcome!</h2>
+
+<p>
+    Please choose Login or Register to continue.
+</p>
+<code>@ViewBag.Token</code>
+<a href="@Url.Action("Login", "Account")" class="btn btn-blue">Login</a>
+<a href="@Url.Action("Register", "Account")" class="btn btn-blue">Register</a>
+<style>
+    .btn-blue {
+        background-color: #007bff; /* Mavi arka plan rengi */
+        color: white; /* Beyaz yazı rengi */
+        border: none; /* Kenarlık yok */
+        padding: 10px 20px; /* İç boşluk */
+        text-decoration: none; /* Alt çizgi yok */
+        border-radius: 5px; /* Köşe yuvarlatma */
+        display: inline-block; /* Satır içi blok */
+        margin-right: 10px; /* Butonlar arasında boşluk */
+    }
+
+    .btn-blue:hover {
+        background-color: #0056b3; /* Hover durumunda daha koyu mavi */
+    }
+</style>
